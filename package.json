@@ -1,0 +1,27 @@
+{
+  "name": "oba-junior-api",
+  "version": "1.0.0",
+  "description": "Application with the Oba Api for Oba Junior",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel client/public/index.html --no-source-maps -p 3000",
+    "build": "parcel build client/public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelseadoeleman/project-1-1819.git"
+  },
+  "keywords": [],
+  "author": "Chelsea Doeleman",
+  "license": "MIT",
+  "homepage": "https://github.com/chelseadoeleman/project-1-1819#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "helpers": "0.0.6",
+    "navigo": "^7.1.2",
+    "oba-wrapper": "github:maanlamp/OBA-wrapper"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
