@@ -29,22 +29,24 @@ export const handleGenreRoute = (main, router) => {
         sectionElement.classList.add('genre-wrapper')
         headingElement.innerText = 'Welk plaatje spreekt jou het meest aan?'
         const genres = [
-            { url: adventure, query: 'facet=genre(science-fiction)'}, 
-            { url: animals, query: 'facet=genre(dieren)'}, 
-            { url: dragon, query: 'facet=genre(avonturenroman)'}, 
-            { url: fantasy, query: 'facet=topic(sprookjesfiguren)'}, 
-            { url: horror, query: 'facet=genre(detective)'}, 
-            { url: princess, query: 'facet=topic(verliefdheid)'}, 
-            { url: soccer, query: 'facet=topic(voetbal)'}, 
-            { url: sports, query: 'facet=topic(vriendschap)'},
-            { url: world, query: 'facet=genre(stripverhaal)'}
+            { alt: 'Avontuur', url: adventure, query: 'facet=genre(science-fiction)'}, 
+            { alt: 'Dieren', url: animals, query: 'facet=genre(dieren)'}, 
+            { alt: 'Draak', url: dragon, query: 'facet=genre(avonturenroman)'}, 
+            { alt: 'Fantasie', url: fantasy, query: 'facet=topic(sprookjesfiguren)'}, 
+            { alt: 'Spanning', url: horror, query: 'facet=genre(detective)'}, 
+            { alt: 'Prinses', url: princess, query: 'facet=topic(verliefdheid)'}, 
+            { alt: 'Voetbal', url: soccer, query: 'facet=topic(voetbal)'}, 
+            { alt: 'Spelen', url: sports, query: 'facet=topic(vriendschap)'},
+            { alt: 'De wereld', url: world, query: 'facet=genre(stripverhaal)'}
         ]
         
         genres.forEach(genre => {
             const genreItem = document.createElement('img')
-            const article = document.createElement('article')
+            const link = document.createElement('a')
+            const article = document.createElement('article') 
             
             genreItem.setAttribute('src', genre.url)
+            genreItem.setAttribute('alt', genre.alt)
             genreItem.addEventListener('load', () => {
                 const data = getAverageRGB(genreItem)                  
 
@@ -52,14 +54,22 @@ export const handleGenreRoute = (main, router) => {
 
                 genreItem.addEventListener('click', () => {
                     root.style.setProperty('--colors', color)
-                    router.navigate('/format')
                 })
                 genreItem.addEventListener('click', () => {
                     queryState.push(genre.query)
                 })
             })
 
-            article.appendChild(genreItem)
+            const go = router.navigate('/format')
+
+            // const goToFormat = link.addEventListener('click', () => {
+            //     router.navigate('/format')
+            // })
+
+            link.setAttribute('href', go)
+
+            link.appendChild(genreItem) 
+            article.appendChild(link)
             sectionElement.appendChild(article)
         })
         

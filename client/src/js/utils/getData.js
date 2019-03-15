@@ -16,7 +16,7 @@ export async function getData() {
         const baseQuery = `doelgroep:ageYouth&facet=language(dut)`
         const bookQuery = !queryUrl.includes('type') ? '&facet=type(book)' : ''
         const dynamicQuery = `${queryUrl ? '&' : ''}${queryUrl || ''}`
-        const amount = '{50}'
+        const amount = '{5}'
         const url = `${urlBase}/${baseQuery}${bookQuery}${dynamicQuery}${amount}`
         const stream = await api.createStream(url)
 

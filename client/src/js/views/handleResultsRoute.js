@@ -21,7 +21,7 @@ export const handleResultsRoute = (main, router) => {
             return result.image && result.image.includes('https://v19.')
         })
         .forEach(result => {
-            const { image, detailpage } = result
+            const { image, detailpage, title } = result
             const article = document.createElement('article')
             const img = document.createElement('img')
             const link = document.createElement('a')
@@ -33,6 +33,7 @@ export const handleResultsRoute = (main, router) => {
                 return
             } else {
                 img.setAttribute('src', image)
+                img.setAttribute('alt', title)
                 link.setAttribute('href', detailpage)
                 
                 link.appendChild(img)

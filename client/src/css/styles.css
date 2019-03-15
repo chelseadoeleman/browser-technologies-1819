@@ -53,6 +53,7 @@ body {
     line-height: 1.5em;
     font-family: "Fredoka";
     color: #f4f4f4;
+    background-color: rgb(15, 23, 71);
     background-image: url("../assets/images/blue.jpg");
     background-size: cover;
     min-height: 100vh;
@@ -71,6 +72,9 @@ footer {
     cursor: pointer;
     transition: all .2s ease-in-out;
     transform: scale(0.9);
+    font-size: 2em;
+    line-height: 1.2;
+    color: #DA1F22;
 }
 
 .logo:hover {
@@ -148,7 +152,7 @@ header img {
 }
 
 main {
-    background-image: url('../assets/images/stars.svg');
+    /* background-image: url('../assets/images/stars.svg'); */
     background-size: cover;
     min-height: 90vh;
     background-repeat: no-repeat;
@@ -180,6 +184,7 @@ h1 {
     flex-direction: row;
     margin: 2em;
     justify-content: space-between;
+    min-height: 300px;
     max-height: 300px;
     min-width: 225px;
     box-shadow: -15px -15px 1px var(--colors);
@@ -195,6 +200,9 @@ h1 {
 }
 
 .book-wrapper article img {
+    max-width: 225px;
+    font-size: 1.5em;
+    line-height: 1.2;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -217,23 +225,31 @@ h1 {
     display: flex;
     flex-direction: row;
     margin: 2em;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.genre-wrapper article img{
-    max-width: 300px;
     background-color: #00A2DC;
     box-shadow: -15px -15px 1px #00A2DC;
+    cursor: pointer;
+    min-height: 250px;
+    min-width: 300px;
+    max-height: 250px;
     border-radius: .5em;
-    transition: all .2s ease-in-out;
     transform: scale(0.9);
+    transition: all .2s ease-in-out;
 }
 
-.genre-wrapper article img:hover {
+.genre-wrapper article img {
+    object-fit: cover;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    line-height: 1.5;
+    border-radius: .5em;
+}
+
+.genre-wrapper article:hover {
     transform: scale(1);
     box-shadow: -20px -20px 1px #DA007D;
+    color: #DA007D;
     filter: saturate(2);
 }
 

@@ -23,7 +23,7 @@ export const handleFormatRoute = (main, router) => {
         formats.forEach(format => {
             const formatItems = document.createElement('h2')
             const article = document.createElement('article')
-
+            
             if (format.format === 'Filmpjes') {
                 article.classList.add('disabled')
             }
