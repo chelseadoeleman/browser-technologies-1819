@@ -17,7 +17,7 @@
 
 ## Colors
 
-I used [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) to check if my application was compatible for people who are colorblind. Altough the colors are altered the user can still make out different components of the application.
+I used [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) to check if my application was compatible for people who are colorblind. Altough the colors are altered the user can still make out different components of the application. I also played with contrast and clarity.
 
 ![colorblind](./docs/colorblind.png)
 
