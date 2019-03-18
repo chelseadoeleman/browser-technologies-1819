@@ -29,7 +29,7 @@ In this application I didn't make any use of cookies, so there wasn't anything t
 ## Custom fonts
 
 In this application I didn't make any use of custom fonts from the internet, however I did import a font in my files. If the user is able to turn of that custom font it will automatically go to the fallback, which is defined in css. 
-```font-family: "Fredoka", "Arial", "Sans-serif";``` To detect if custom fonts are loaded and to turn them off you can use [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?hl=nl) which is an extension in chrome.
+```font-family: "Fredoka", Arial, Sans-serif;``` To detect if custom fonts are loaded and to turn them off you can use [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?hl=nl) which is an extension in chrome.
 
 ## Images
 
