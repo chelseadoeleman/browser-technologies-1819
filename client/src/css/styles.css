@@ -51,7 +51,7 @@ html, body {
 body {
     overflow-x: hidden;
     line-height: 1.5em;
-    font-family: "Fredoka";
+    font-family: "Fredoka", "Arial", "Sans-serif";
     color: #f4f4f4;
     background-color: rgb(15, 23, 71);
     background-image: url("../assets/images/blue.jpg");
