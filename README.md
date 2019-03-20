@@ -13,6 +13,7 @@
 * [Javascript](#Javascript)
 * [Localstorage](#Localstorage)
 * [Mouse and/or Trackpad](#Mouse-and/or-Trackpad)
+* [Using a screenreader](#Using-a-screenreader)
 * [License](#License)
 
 ## Colors
@@ -62,7 +63,12 @@ Right now when fetching content is automatically pushed towards Localstorage. Wh
 ## Mouse and/or Trackpad
 
 To navigate without a mouse or trackpad the user is limited to using tab, enter or the spacebar.
-Without an mouse or trackpad the user isn't able to navigate throughout this page with tab. Mainly because I linked my navigation to html elements, that aren't meant for navigation... For example images or articles. This is very bad practice. So I changed the way I had originally set up my navigation by adding anchor elements to the images or articles, so the proper HTML element is used for navigation. This took a lot of time, but in the end I fanlly managed to fix this.  
+Without an mouse or trackpad the user isn't able to navigate throughout this page with tab. Mainly because I linked my navigation to html elements, that aren't meant for navigation... For example images or articles. This is very bad practice. So I changed the way I had originally set up my navigation by adding anchor elements to the images or articles, so the proper HTML element is used for navigation. This took a lot of time, but in the end I fanlly managed to fix this. 
+
+
+## Using a screenreader
+
+To activate the screenreader on Mac press ```command, option + f5```. When activating the screen the home page works properly, however on the next page I run into several problem. I added an eventListener to an article, which is why the screenreader skips over those elements, therefore the user isn't able to access those elements to navigate to the next page. When changing the article elements to buttons, the user will be able to navigate properply in the application.
 
 
 ## License

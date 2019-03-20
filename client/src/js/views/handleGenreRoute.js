@@ -60,7 +60,7 @@ export const handleGenreRoute = (main, router) => {
                 })
             })
 
-            const go = router.navigate('/format')
+            // const go = router.navigate('/format')
 
             // const goToFormat = link.addEventListener('click', () => {
             //     router.navigate('/format')
