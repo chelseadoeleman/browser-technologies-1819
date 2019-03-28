@@ -74,11 +74,13 @@ To activate the screenreader on Mac press ```command, option + f5```. When activ
 
 ## Device Lab
 
-The device lab was broken multiple times, which made testing my application quite difficult. In the end I decided to test out 2 devices by just inserting the link to my oba application in the browser to test it out, because in the end it still wasn't working. What I noticed on those two devices was the following:
+The device lab was broken multiple times, which made testing my application quite difficult. In the end I decided to test out 2 devices by just inserting the link to my oba application in the browser to test it out. The seconde time around it did finally work.
 
-*   I didn't add mediaqueries to my styles, so the whole layout was one big mess.
+*   I didn't add mediaqueries to my styles, so the whole layout was one big mess, only on larger devices it looked somewhat presentable.
 *   Content doesn't load properly, this could be due to the fact that Javascript was disabled, but I don't know for sure. If that is the case it explains, why links are not working, because I also handled this with Javascript, which is definitely bad practise.
-
+*   On one device the whole application worked accordingly. 
+*   Some links weren't working and thus I couldn't navigate through the application.
+*   I also used a svg animation on the background made the devices heat up pretty quickly and on other devices the animation didn't work.
 
 ## License
 This repository is licensed as [MIT](LICENSE) by [Chelsea Doeleman](https://github.com/chelseadoeleman).
