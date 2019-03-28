@@ -1,4 +1,4 @@
-# Project 1 @cmda-minor-web · 2018-2019
+# Browser Technologies
 
 **Enhance the performance of the Oba Project and define what can be improved and how you would improve this.**
 
@@ -69,6 +69,14 @@ Without an mouse or trackpad the user isn't able to navigate throughout this pag
 ## Using a screenreader
 
 To activate the screenreader on Mac press ```command, option + f5```. When activating the screen the home page works properly, however on the next page I run into several problem. I added an eventListener to an article, which is why the screenreader skips over those elements, therefore the user isn't able to access those elements to navigate to the next page. When changing the article elements to buttons, the user will be able to navigate properply in the application.
+
+
+## Device Lab
+
+The device lab was broken multiple times, which made testing my application quite difficult. In the end I decided to test out 2 devices by just inserting the link to my oba application in the browser to test it out, because in the end it still wasn't working. What I noticed on those two devices was the following:
+
+*   I didn't add mediaqueries to my styles, so the whole layout was one big mess.
+*   Content doesn't load properly, this could be due to the fact that Javascript was disabled, but I don't know for sure. If that is the case it explains, why links are not working, because I also handled this with Javascript, which is definitely bad practise.
 
 
 ## License
