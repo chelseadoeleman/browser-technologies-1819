@@ -14,6 +14,7 @@
 * [Localstorage](#Localstorage)
 * [Mouse and/or Trackpad](#Mouse-and/or-Trackpad)
 * [Using a screenreader](#Using-a-screenreader)
+* [Device Lab](#Device-lab)
 * [License](#License)
 
 ## Colors
