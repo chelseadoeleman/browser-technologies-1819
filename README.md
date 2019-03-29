@@ -1,6 +1,8 @@
 # Browser Technologies
 
-**Enhance the performance of the Oba Project and define what can be improved and how you would improve this.**
+**Enhance the performance of the Oba Project and define what can be improved and how you would improve this. And building a Use Case on accessablitiy**
+
+The repository for the Use case can be found here: [Use Case Route Planner](https://github.com/chelseadoeleman/route-planner)
 
 ![The Application](./docs/discover.png)
 
